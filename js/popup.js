@@ -101,7 +101,6 @@ var bkg = chrome.extension.getBackgroundPage();
 
 const $ = id => document.getElementById(id);
 
-
 window.onload = function() {
 
   var usageStats = JSON.parse(localStorage.getItem("gwatchme_data"));
