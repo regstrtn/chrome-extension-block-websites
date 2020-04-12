@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- This code has been taken from https://github.com/srikarg/Trackr -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>gWatchMe Settings</title>
+
+    <link rel="stylesheet" href="../css/cosmobootstrap.css">
+    <!-- <link rel="stylesheet" href="https://static.corp.google.com/hivemind/bootstrap/css/bootstrap-theme.min.css"> -->
+
+</head>
+
+<body>
+    <div class="container" style = 'padding:25px;'>
+        <h5>Time settings per website</h5>
+        <p>Enter the website name and the time per day after which you want the website to be blocked. </p>
+        <div id = "pre-configured-websites"></div>
+        <hr style ='color:white; background-color:white;'/>
+        <p id="form-title">Add another website:</p>
+        <label class='control-label' for='restricted-website-name'> Website Name: </label>
+        <input type="text" value="youtube.com" id="restricted-website-name" class='form-control'/> <br />
+        <label class='control-label' for='restricted-website-duration'> Duration in minutes: </label>
+        <input type = "number" value = "120" id="restricted-website-duration" class='form-control'/> 
+        <br />
+        <button id="save-website"> Add Website </button>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>

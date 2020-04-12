@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- I highly recommend setting a fixed minimum width & height.
+     Your popup opening animation will be much faster that way. -->
+<html style="width: 400px; min-height: 150px">
+  <head>
+
+    <!-- TODO: load the Google API interface script, and call onLoad() -->
+    <link rel=stylesheet href="../css/popup.css"></link>
+  </head>
+  <body>
+    <div id=event-header>
+      <div id="top-line"><a id="openOptions">gWatchMe<span id="event-time" style=""></span></a></div>
+      <a id=event-title target=_blank style=display:block></a>
+      <div id=message>
+        Your Daily Usage
+      </div>
+    </div>
+    <canvas id='donut-canvas' height='200px'></canvas>
+
+    <div id=event-description>
+      <table id="site-list" cellpadding="5px" style="font-family:Roboto;">
+
+      </table>
+    </div>
+    <a id=event-location target=_blank></a>
+
+    <script src='../js/chartjs/Chart.js'></script>
+
+		<script src='../js/popup.js'></script>
+  </body>
+</html>
